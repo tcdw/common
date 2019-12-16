@@ -1,0 +1,19 @@
+{
+  "name": "pomment-common",
+  "version": "3.0.0",
+  "description": "Pomment Common Library",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pomment/common.git"
+  },
+  "author": "tcdw <tcdw2011@gmail.com>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/pomment/common/issues"
+  },
+  "homepage": "https://github.com/pomment/common#readme",
+  "devDependencies": {
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.3"
+  }
+}
