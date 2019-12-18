@@ -6,6 +6,11 @@
     "type": "git",
     "url": "git+https://github.com/pomment/common.git"
   },
+  "scripts": {
+    "build": "tsc --build tsconfig.json",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "clean": "del-cli dist"
+  },
   "author": "tcdw <tcdw2011@gmail.com>",
   "license": "BSD-3-Clause",
   "bugs": {
