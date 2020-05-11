@@ -1,6 +1,6 @@
 {
   "name": "pomment-common",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Pomment Common Library",
   "repository": {
     "type": "git",
@@ -18,7 +18,11 @@
   },
   "homepage": "https://github.com/pomment/common#readme",
   "devDependencies": {
-    "tslint": "^5.20.1",
-    "typescript": "^3.7.3"
+    "@typescript-eslint/eslint-plugin": "^2.31.0",
+    "@typescript-eslint/parser": "^2.31.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "typescript": "^3.8.3"
   }
 }

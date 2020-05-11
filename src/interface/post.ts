@@ -1,5 +1,7 @@
 export interface IThreadItem {
     title: string;
+    latestPostAt: number | null;
+    amount: number;
 }
 
 export interface IPostQueryResults {
