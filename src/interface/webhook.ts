@@ -1,9 +1,9 @@
-import { IPostQueryResults, IThreadItem } from "./post";
+import { IPostQueryResults, IThreadItem } from './post';
 
-enum EventName {
-    postAdded = "post_added",
-    postEdited = "post_edited",
-    postRemoved = "post_removed",
+export enum EventName {
+    postAdded = 'post_added',
+    postEdited = 'post_edited',
+    postRemoved = 'post_removed',
 }
 
 export interface IWebhookRequest {

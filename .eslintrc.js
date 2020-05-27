@@ -1,6 +1,5 @@
 module.exports = {
   env: {
-    browser: true,
     es6: true,
     node: true,
   },
@@ -13,12 +12,31 @@ module.exports = {
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 11,
+    ecmaVersion: 2018,
     sourceType: 'module',
   },
   plugins: [
     '@typescript-eslint',
   ],
   rules: {
+    indent: ['error', 4],
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        'js': 'never',
+        'ts': 'never',
+      }
+    ],
+    'no-unused-vars': 'off',
+    'no-plusplus': ['error', { 'allowForLoopAfterthoughts': true }],
+    "prefer-destructuring": "off",
+  },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.ts'],
+      },
+    },
   },
 };

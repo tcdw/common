@@ -1,7 +1,7 @@
 const unicodeNBMP = /[\uD800-\uDBFF][\uDC00-\uDFFF]/g;
 
 export function checkEmpty(e: string) {
-    return (e.trim() === "") || e === null || typeof e === "undefined";
+    return (e.trim() === '') || e === null || typeof e === 'undefined';
 }
 
 export function checkName(e: string) {
@@ -17,7 +17,7 @@ export function checkWebsite(e: string) {
 }
 
 export function checkContentLength(e: string) {
-    return e.trim().replace(unicodeNBMP, "_").length <= 1000;
+    return e.trim().replace(unicodeNBMP, '_').length <= 1000;
 }
 
 export function checkContent(e: string) {
