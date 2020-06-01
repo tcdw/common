@@ -8,7 +8,9 @@ export enum EventName {
 
 export interface IWebhookRequest {
     event: EventName;
+    token: string | null;
     url: string;
     thread: IThreadItem;
     post: IPostQueryResults;
+    parent: IPostQueryResults | null;
 }
