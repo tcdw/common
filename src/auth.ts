@@ -75,7 +75,9 @@ export class Auth {
         this.logger.debug(`${this.queue.length} used timestamps left`);
         if (this.queue.length > 0) {
             this.timer = setTimeout(this.cleanQueue.bind(this), Auth.maxTimeGap * 1000);
+            return;
         }
+        this.timer = null;
     }
 }
 
